@@ -106,23 +106,22 @@
 
 <script>
 
+  
   const toggleButton = document.querySelector('.collapsible-toggle');
-
   const arrow = document.querySelector('.arrow');
-
   const collapsibleContent = document.querySelector('.collapsible-content');
 
-  toggleButton.addEventListener('click', () => {
+  // Hide the buttons by default (ensures the div remains hidden)
+  collapsibleContent.style.display = 'none';
 
-    const isCollapsed = collapsibleContent.style.display === 'none' || collapsibleContent.style.display === '';
+  toggleButton.addEventListener('click', () => {
+    const isCollapsed = collapsibleContent.style.display === 'none';
 
     collapsibleContent.style.display = isCollapsed ? 'block' : 'none';
-
     arrow.classList.toggle('collapsed', !isCollapsed);
-
     toggleButton.querySelector('span:nth-child(2)').textContent = isCollapsed ? 'Hide Buttons' : 'Show More Buttons';
-
   });
+
 
 </script>
    </body>
