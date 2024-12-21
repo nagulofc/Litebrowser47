@@ -78,7 +78,52 @@
       </form>
 
 
+<br><br>
 
-      
+      <div class="collapsible-container">
+
+  <button class="collapsible-toggle">
+
+    <span class="arrow collapsed">▶</span>
+
+    <span>Show More Buttons</span>
+
+  </button>
+
+  <div class="collapsible-content">
+
+    <button>Button 1</button>
+
+    <button>Button 2</button>
+
+    <button>Button 3</button>
+
+    <button>Button 4</button>
+
+  </div>
+
+</div>
+
+<script>
+
+  const toggleButton = document.querySelector('.collapsible-toggle');
+
+  const arrow = document.querySelector('.arrow');
+
+  const collapsibleContent = document.querySelector('.collapsible-content');
+
+  toggleButton.addEventListener('click', () => {
+
+    const isCollapsed = collapsibleContent.style.display === 'none' || collapsibleContent.style.display === '';
+
+    collapsibleContent.style.display = isCollapsed ? 'block' : 'none';
+
+    arrow.classList.toggle('collapsed', !isCollapsed);
+
+    toggleButton.querySelector('span:nth-child(2)').textContent = isCollapsed ? 'Hide Buttons' : 'Show More Buttons';
+
+  });
+
+</script>
    </body>
 </html>
