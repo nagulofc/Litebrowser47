@@ -125,55 +125,7 @@ input{
 
     }
 
-    .collapsible-content button {
-
-      margin: 5px;
-
-      padding: 10px;
-
-      border: 1px solid #007bff;
-
-      background-color: #f8f9fa;
-
-      color: #007bff;
-
-      border-radius: 5px;
-
-      cursor: pointer;
-
-    }
-
-    .collapsible-content button:hover {
-
-      background-color: #007bff;
-
-      color: white;
-
-    }
-
-
-
-      margin-top: 10px;
-
-    }
-
-    .collapsible-content button {
-
-      margin: 5px;
-
-      padding: 10px;
-
-      border: 1px solid #007bff;
-
-      background-color: #f8f9fa;
-
-      color: #007bff;
-
-      border-radius: 5px;
-
-      cursor: pointer;
-
-    }
+    
 
     .collapsible-content button:hover {
 
