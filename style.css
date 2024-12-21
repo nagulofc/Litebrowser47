@@ -45,6 +45,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
 
 a{
